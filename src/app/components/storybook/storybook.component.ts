@@ -36,12 +36,6 @@ export class StorybookComponent implements OnInit, AfterViewInit {
                 autoCenter: true
             });
 
-            $('.flipbook').bind('turned', function(event, page, view) {
-                console.log(page, view);
-                if (page === 20 || page === 21) {
-                    window.reInit();
-                }
-
             });
             $('.flipbook').bind('turned', function(event, page, view) {
                 console.log(page, view);
