@@ -1,7 +1,7 @@
 import { Component, OnInit, NgZone, AfterViewInit } from '@angular/core';
 declare var $: any;
 declare var window: any;
-// declare function reInit(): any;
+
 @Component({
     selector: 'app-storybook',
     templateUrl: './storybook.component.html',
@@ -15,13 +15,10 @@ export class StorybookComponent implements OnInit, AfterViewInit {
      }
 
     ngOnInit() {
-        // this.initFlipBook();
+
     }
     ngAfterViewInit() {
         this.initFlipBook();
-        // setTimeout(() => {
-        //     window.reInit();
-        // }, 1000);
     }
 
     initFlipBook() {
@@ -58,8 +55,6 @@ export class StorybookComponent implements OnInit, AfterViewInit {
             });
         // });
     }
-
-
 
     playSound(elementId) {
         console.log(elementId);
