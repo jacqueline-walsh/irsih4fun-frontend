@@ -1,1 +1,1 @@
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+MEAN Stack frontend hosted on [irish4fun-angular.herokuapp.com](https://irish4fun-angular.herokuapp.com/)
